@@ -6,7 +6,7 @@
 	<link rel="shortcut icon" href="/img/logo_miccall.png">
 	
 			    <title>
-    Hexo
+    PaperAider
     </title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
@@ -14,8 +14,6 @@
     <link rel="stylesheet" href="/css/dropdownMenu.css" />
     <meta name="keywords" content="论文降重 论文查重 paperaider 论文修改 论文指导 paper" />
     
-    	<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-	 
     <noscript>
         <link rel="stylesheet" href="/css/noscript.css" />
     </noscript>
@@ -94,7 +92,7 @@
 			<!-- categories_name  分类   --> 
 	        
 	        <li class="active">
-	            <a href="#s1">降重服务</a>
+	            <a href="#s1">服务介绍</a>
 	                    <ul class="submenu">
 	                        <li>
 	                        
@@ -107,26 +105,20 @@
 		        <!-- Pages 自定义   -->
 		        
 		        <li>
-		            <a href="/group/" title="关于我们">
-		                关于我们
-		            </a>
-		        </li>
-		        
-		        <li>
 		            <a href="/about/" title="团队招募">
 		                团队招募
 		            </a>
 		        </li>
 		        
 		        <li>
-		            <a href="/gallery/" title="学术资讯">
-		                学术资讯
+		            <a href="/gallery/" title="成功案例">
+		                成功案例
 		            </a>
 		        </li>
 		        
 		        <li>
-		            <a href="/tag/" title="联系我们">
-		                联系我们
+		            <a href="/group/" title="关于我们">
+		                关于我们
 		            </a>
 		        </li>
 		        
@@ -153,7 +145,7 @@
             <article id="me" class="panel">
                 <header style="color: #000000">
                     <h1>Paper Aider</h1>
-                    <p>Paper Aider 专注于论文润色修改，微信公众号免费指导 <br/>资深审稿老师为您的论文把关 论文有我，毕业无忧！</p>
+                    <p>Paper Aider 专注于论文润色修改，微信公众号免费指导 <br/>资深审稿老师为您论文把关。 论文有我，毕业无忧！</p>
                 </header>
                 <a href="http://www.paperaider.cn/group/" target="_blank" rel="noopener" class="jumplink pic">
                     <span class="arrow icon fa-chevron-right"><span></span></span>
@@ -176,7 +168,7 @@
                        <a href="/2019/11/29/test-my-site/">
                         <div class="page_title" style="background-image: url();background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;">
                             <!--标题-->
-                            <h2 class="page_title_text"> test_my_site </h2>
+                            <h2 class="page_title_text"> 降重流程 </h2>
                             <!--段落-->
                         </div>
                         </a>
@@ -236,6 +228,25 @@
         <footer style="text-align: center; padding-top: 2em;">
   
 </footer>
+<script>
+    $(document).ready(function () {
+
+        var int = setInterval(fixCount, 50);  // 50ms周期检测函数
+        var pvcountOffset = 80000;  // 初始化首次数据
+        var uvcountOffset = 20000;
+
+        function fixCount() {
+            if (document.getElementById("busuanzi_container_site_pv").style.display != "none") {
+                $("#busuanzi_value_site_pv").html(parseInt($("#busuanzi_value_site_pv").html()) + pvcountOffset);
+                clearInterval(int);
+            }
+            if ($("#busuanzi_container_site_pv").css("display") != "none") {
+                $("#busuanzi_value_site_uv").html(parseInt($("#busuanzi_value_site_uv").html()) + uvcountOffset); // 加上初始数据 
+                clearInterval(int); // 停止检测
+            }
+        }
+    });
+</script>
 
         <!-- footer  页码 end-->
         <!-- Copyright 版权 start -->
@@ -245,14 +256,14 @@
                 <li>Design: <a href="http://www.paperaider.cn/group/" target="_blank" rel="noopener" style="border-bottom: none;">Moyi</a></li>
             </ul>
             
-                <span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+				<span id="busuanzi_container_site_pv"> 2019 </span> 
 			
         </div>
         <!-- Copyright 版权 end -->
     </div>
     <!-- Wrapper 外包 e-->
     <!-- Scripts -->
-</body>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"log":false,"model":{"jsonPath":"/live2dw/assets/shizuku.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"react":{"opacity":0.7}});</script><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"log":false,"model":{"jsonPath":"/live2dw/assets/shizuku.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"react":{"opacity":0.7}});</script></body>
 
  	
 </html>
