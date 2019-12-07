@@ -1,4 +1,6 @@
-# Group 1
+Sitemap: http://www.paperaider.cn/sitemap.xml
+
+# global
 User-agent: *
 Allow: /
 Disallow:
